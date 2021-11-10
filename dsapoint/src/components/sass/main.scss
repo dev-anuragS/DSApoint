@@ -1,3 +1,5 @@
+@import '../sass/variables.scss';
+
 *{
     margin:0;
     padding:0;
@@ -28,7 +30,7 @@
     font-size:1.44rem;
     font-weight: 600;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:rgb(186, 253, 0)!important;
+    color: $primary !important;
 }
 
 .linksName{
