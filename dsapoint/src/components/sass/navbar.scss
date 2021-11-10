@@ -1,0 +1,61 @@
+@import '../sass/variables.scss';
+
+.navbar{
+    background-color: black!important;
+}
+
+.hamburger{
+    background-color: rgba(0, 0, 0, 0.44);
+    border-radius: 6px;
+    border:2px solid white;
+    margin-right:10px;
+}
+
+.hamburger:focus{
+    box-shadow:none;
+}
+
+.hamburger:hover{
+    border: 2px solid white;
+}
+
+.logoName{
+    margin-left:10px;
+    font-size:1.44rem;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: $primary !important;
+}
+
+.linksName{
+    margin-left:15px;
+}.navbar{
+    background-color: black!important;
+}
+
+.hamburger{
+    background-color: rgba(0, 0, 0, 0.44);
+    border-radius: 6px;
+    border:2px solid white;
+    margin-right:10px;
+}
+
+.hamburger:focus{
+    box-shadow:none;
+}
+
+.hamburger:hover{
+    border: 2px solid white;
+}
+
+.logoName{
+    margin-left:10px;
+    font-size:1.44rem;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: $primary !important;
+}
+
+.linksName{
+    margin-left:15px;
+}

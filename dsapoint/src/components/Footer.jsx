@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {NavLink} from 'react-router-dom'
+import '../components/sass/footer.scss'
 
 const Footer = () => {
 
@@ -67,7 +68,7 @@ const Footer = () => {
                     </section>
                 </div>
                 <div class="text-center p-3">
-                    © 2020 Copyright: DSAPoint
+                    © 2020 Copyright: DSApoint
                 </div>
             </footer>
         </div>
