@@ -1,8 +1,20 @@
 @import '../sass/variables.scss';
 
 #home{
-    height:70vh;
+    min-height:70vh;
+    min-width:100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#homeContent{
+    min-height: 60vh;
+    min-width:90vw;
+    padding:10px;
+    background-color: $background;
+    color: $primary;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
 }

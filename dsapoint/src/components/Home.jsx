@@ -5,7 +5,10 @@ const Home = () => {
     return (
         <>
             <div id="home">
-                yolo
+                <div id="homeContent">
+                    <h1>yolo</h1>
+                    <p>hey this is yolo</p>
+                </div>
             </div>
         </>
     )
