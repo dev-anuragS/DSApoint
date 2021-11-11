@@ -6,8 +6,11 @@ const Home = () => {
         <>
             <div id="home">
                 <div id="homeContent">
-                    <h1>yolo</h1>
-                    <p>hey this is yolo</p>
+                    <div id="homeTitle">
+                    <h1>dp</h1>
+                    <p>DSApoint</p>
+                    </div>
+                    <p>random text go brrrrrr</p>
                 </div>
             </div>
         </>
