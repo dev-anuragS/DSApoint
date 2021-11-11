@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import '../components/sass/navbar.scss'
 
 const Navbar = () => {
@@ -18,7 +18,18 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" exact to="/login">Login / SignUp</NavLink>
-                        </li>      
+                        </li>
+                        <li className="nav-item dropdown">
+                            <NavLink className="nav-link dropdown-toggle" exact to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Courses
+                            </NavLink>
+                            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <NavLink className="dropdown-item" exact to="/stack">Stack</NavLink>
+                                <NavLink className="dropdown-item" exact to="/queue">Queue</NavLink>
+                                <div className="dropdown-divider"></div>
+                                <NavLink className="dropdown-item" exact to="/codingPlatform">Coding Platform</NavLink>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </nav>
