@@ -7,10 +7,12 @@ const Home = () => {
             <div id="home">
                 <div id="homeContent">
                     <div id="homeTitle">
-                    <h1>dp</h1>
-                    <p>DSApoint</p>
+                        <h1>dp</h1>
+                        <p>DSApoint</p>
                     </div>
-                    <p>random text go brrrrrr</p>
+                    <div id='homeScreenContent'>
+                        <p>A DSA Learning and Coding Platform</p>
+                    </div>
                 </div>
             </div>
         </>
