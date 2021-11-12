@@ -26,6 +26,7 @@ const Navbar = () => {
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <NavLink className="dropdown-item" exact to="/stack">Stack</NavLink>
                                 <NavLink className="dropdown-item" exact to="/queue">Queue</NavLink>
+                                <NavLink className="dropdown-item" exact to="/linkedlist">Linked List</NavLink>
                                 <div className="dropdown-divider"></div>
                                 <NavLink className="dropdown-item" exact to="/codingPlatform">Coding Platform</NavLink>
                             </div>
