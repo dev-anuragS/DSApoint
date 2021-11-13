@@ -6,7 +6,7 @@
 }
 
 .hamburger{
-    background-color: rgba(0, 0, 0, 0.44);
+    background-color: $background;
     border-radius: 6px;
     border:2px solid white;
     margin-right:10px;
@@ -17,7 +17,7 @@
 }
 
 .hamburger:hover{
-    border: 2px solid white;
+    border: 2px solid $primary;
 }
 
 .logoName{
