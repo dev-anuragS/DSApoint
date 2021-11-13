@@ -1,14 +1,15 @@
 @import '../sass/variables.scss';
 
 #container{
-    min-height:100vh;
+    min-height:80vh;
     display:flex;
     align-items: center;
     justify-content: center;
+    background-color: $primary;
 }
 
 #loginContainer{
-    min-height:80vh;
+    min-height:70vh;
     display:flex;
     width:80vw;
     align-items: center;
@@ -17,19 +18,21 @@
 }
 
 #left{
-    width:30%;
-    height:80vh;
+    width:50%;
+    height:55vh;
     display:flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    background-color: white;
 }
 
 #right{
-    width:70%;
-    height:80vh;
+    width:50%;
+    height:60vh;
     display:flex;
     align-items: center;
     justify-content: center;
-    border:2px solid black;
+    background-color: $background;
+    box-shadow: 20px;
+    color:$secondary;
 }
