@@ -1,0 +1,35 @@
+@import '../sass/variables.scss';
+
+#container{
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginContainer{
+    min-height:80vh;
+    display:flex;
+    width:80vw;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+}
+
+#left{
+    width:30%;
+    height:80vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+#right{
+    width:70%;
+    height:80vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid black;
+}
