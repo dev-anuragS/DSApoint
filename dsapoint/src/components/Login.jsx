@@ -8,10 +8,10 @@ const Login = () => {
             <div id="container">
                 <div id="loginContainer">
                     <div id="left">
-                        left
+                        Login<br/>random shit go brrr
                     </div>
                     <div id="right">
-                        right
+                        Form here
                     </div>
                 </div>
             </div>
