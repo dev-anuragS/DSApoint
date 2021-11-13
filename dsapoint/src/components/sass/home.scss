@@ -12,10 +12,9 @@
 #homeContent{
     min-height: 60vh;
     min-width:80vw;
-    background-color: $background;
     color: $primary;
     display:flex;
-    border-left:10px solid $background;
+    
     border-right:10px solid $background;
 }
 
@@ -28,16 +27,35 @@
     align-items: center;
     min-width:30%;
     background-color: white;
+    border-left:10px solid $background;
     color:black;
+    z-index:1;
+    transform: translateX(0%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform:translateX(0%);
+    }
+    50%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
 }
 
 #homeScreenContent{
+    background-color: $background;
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding:5px;
     min-width:70%;
     text-align: center;
+    z-index:2;
 }
 
 #logo{
@@ -51,4 +69,23 @@
 #logoContent{
     font-size:4vmin;
     font-weight:600;
+}
+
+#loginBtn{
+    margin:none;
+    border:none;
+    padding:8px;
+    background-color: $background;
+    border:2px solid $primary;
+    border-radius: 15px;
+    color:$primary;
+    font-weight: 600;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#loginBtn:hover{
+    background-color: $primary;
+    color:$background;
+    transition: .4s;
 }

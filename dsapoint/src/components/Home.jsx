@@ -12,6 +12,7 @@ const Home = () => {
                     </div>
                     <div id='homeScreenContent'>
                         <p id='logoContent'>A DSA Learning and Coding Platform</p>
+                        <button id='loginBtn'>Get Started</button>
                     </div>
                 </div>
             </div>
