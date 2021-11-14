@@ -8,7 +8,8 @@ const Login = () => {
             <div id="container">
                 <div id="loginContainer">
                     <div id="left">
-                        Login<br/>random shit go brrr
+                        <div id='loginText'>Login</div>
+                        random shit go brrr
                     </div>
                     <div id="right">
                         Form here
