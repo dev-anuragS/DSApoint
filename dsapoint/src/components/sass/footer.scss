@@ -3,3 +3,13 @@
 .footerCss{
     background-color: $background!important;
 }
+
+.socialLogo{
+    background-color: transparent!important;
+    color:white!important;
+}
+
+.socialLogo:hover{
+    background-color: white!important;
+    color:black!important;
+}
