@@ -45,32 +45,32 @@ const Stack = () => {
                     </div>
 
                     <div class="maincontainer">
-        <div class="thecard">
-            <div class="thefront">
-                <div id="dp">
-                    <h1>dp</h1>
-                </div>
-                <div id="content">
-                    <ul>
-                        <li>Understanding Stack is difficult!</li>
-                        <li>Not anymore, Come Here</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="theback">
-                <div id="visualizebtn">Visualize</div>
-                <div id="visualContent">
-                    <h3>Stack Operations</h3>
-                    <ul>
-                        <li>Pop</li>
-                        <li>push</li>
-                        <li>peek</li>
-                        <li>top</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+                        <div class="thecard">
+                            <div class="thefront">
+                                <div id="dp">
+                                    <h1>dp</h1>
+                                </div>
+                                <div id="content">
+                                    <ul>
+                                        <li>Understanding Stack is difficult!</li>
+                                        <li>Not anymore, Come Here</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="theback">
+                                <div id="visualizebtn">Visualize</div>
+                                <div id="visualContent">
+                                    <h3>Stack Operations</h3>
+                                    <ul>
+                                        <li>Pop</li>
+                                        <li>push</li>
+                                        <li>peek</li>
+                                        <li>top</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
