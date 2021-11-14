@@ -31,6 +31,7 @@
     width:50%;
     height:60vh;
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: $background;
@@ -41,4 +42,42 @@
 #loginText{
     font-size:7vmin;
     font-weight: 800;
+}
+
+#loginForm{
+    display:flex;
+    flex-direction: column;
+}
+
+input{
+    background-color: transparent;
+    border:none;
+    border-bottom:2px solid $secondary;
+    outline:none;
+    margin-bottom:20px;
+    padding:5px;
+}
+
+input:focus{
+    border-color: $primary;
+}
+
+.smallTextLoginForm{
+    font-size:.8rem;
+}
+
+#loginFormBtn{
+    outline:none;
+    border:none;
+    background-color: transparent;
+    border:2px solid $primary;
+    padding:10px;
+    color:$primary;
+    border-radius:25px;
+    font-weight: 600;;
+}
+
+#loginFormBtn:hover{
+    background-color: $primary;
+    color:$background;
 }

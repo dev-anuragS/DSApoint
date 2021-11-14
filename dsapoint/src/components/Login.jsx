@@ -12,7 +12,13 @@ const Login = () => {
                         random shit go brrr
                     </div>
                     <div id="right">
-                        Form here
+                        <form action="" id="loginForm">
+                            <label htmlFor="emailId"><span class='smallTextLoginForm'>Email</span></label>
+                            <input type="email" name="emailId" id="emailId" value='' />
+                            <label htmlFor="password"><span class='smallTextLoginForm'>Password</span></label>
+                            <input type="password" name="password" id="password" value='' />
+                            <button type="submit" id='loginFormBtn'>Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
