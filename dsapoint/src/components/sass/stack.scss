@@ -5,7 +5,8 @@ h2{
     width: 100%;
     justify-content: center;
     align-items: center;
-    color: black;
+    // color: white;
+    // background-color: black;
     font-weight: bold;
     // margin-bottom: 20px;
     padding: 25px;
@@ -13,11 +14,15 @@ h2{
 hr{
     width: 75%;
     margin: auto;
+    background-color: black;
+    color: white;
 }
 #stackcontent{
     padding-top: 30px;
     padding-left: 30px;
     display: flex;
+    // background-color: black;
+    // color: white;
     flex-direction: row;
 }
 #theory{
