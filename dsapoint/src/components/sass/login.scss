@@ -82,3 +82,18 @@ input:focus{
     background-color: $primary;
     color:$background;
 }
+
+#innerLoginFormDiv{
+    font-size: .8rem;
+    display:flex;
+}
+
+.loginFormLink{
+    color:white;
+    margin:10px 15px;
+    text-decoration: none;
+}
+
+.loginFormLink:hover{
+    color:$primary;
+}

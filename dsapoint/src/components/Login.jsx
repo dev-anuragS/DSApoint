@@ -36,6 +36,10 @@ const Login = () => {
                             <input type="password" name="password" id="password" value={loginData.password} onChange={inputEvent} />
                             <button type="submit" id='loginFormBtn'>Submit</button>
                         </form>
+                        <div id="innerLoginFormDiv">
+                            <NavLink exact to="" className="loginFormLink">Sign Up</NavLink>
+                            <NavLink exact to="" className="loginFormLink">Forgot Password?</NavLink>
+                        </div>
                     </div>
                 </div>
             </div>
