@@ -1,9 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
-import '../components/sass/login.scss'
+import '../components/sass/signUp.scss'
 
-const Login = () => {
+const SignUp = () => {
 
     const [loginData,setLoginData] = useState({
         emailId:"",
@@ -25,7 +25,7 @@ const Login = () => {
             <div id="container">
                 <div id="loginContainer">
                     <div id="left">
-                        <div id='loginText'>Login</div>
+                        <div id='loginText'>Sign Up</div>
                         random shit go brrr
                     </div>
                     <div id="right">
@@ -37,8 +37,7 @@ const Login = () => {
                             <button type="submit" id='loginFormBtn'>Submit</button>
                         </form>
                         <div id="innerLoginFormDiv">
-                            <NavLink exact to="/signUp" className="loginFormLink">Sign Up</NavLink>
-                            <NavLink exact to="" className="loginFormLink">Forgot Password?</NavLink>
+                            <NavLink exact to="/login" className="loginFormLink">Already have an Account !</NavLink>
                         </div>
                     </div>
                 </div>
@@ -47,4 +46,4 @@ const Login = () => {
         </>
 )}
 
-export default Login
+export default SignUp
