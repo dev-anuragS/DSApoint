@@ -11,7 +11,12 @@ const Home = () => {
                         <p id='logoName'>DSApoint</p>
                     </div>
                     <div id='homeScreenContent'>
-                        <p id='logoContent'>A DSA Learning and Coding Platform</p>
+                        <div id="variableContent">
+                        <p id='logoContent'>Anurag</p>
+                        <p id='logoContent'>Ankur</p>
+                        <p id='logoContent'>Ambesh</p>
+                        <p id='logoContent'>Anmol</p>
+                        </div>
                         <button id='loginBtn'>Get Started</button>
                     </div>
                 </div>

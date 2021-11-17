@@ -68,9 +68,47 @@
     font-size:3.5vmin;
 }
 
-#logoContent{
+#variableContent{
+    height:8vmin;
+    line-height:8vmin;
+    overflow:hidden;
+}
+
+#variableContent p{
+    margin:0;
     font-size:4vmin;
+    line-height:8vmin;
     font-weight:600;
+    position:relative;
+    top:0;
+    animation: slideup 12s steps(4) infinite;
+}
+
+@keyframes slideup {
+    100%{
+        top:-32vmin;
+    }
+}
+
+#variableContent p::after{
+    content:"";
+    position:absolute;
+    left:0;
+    height:100%;
+    width:100%;
+    border-left:2px solid $primary;
+    background-color: $background;
+    animation: typewriter 3s steps(10) infinite;
+}
+
+@keyframes typewriter {
+    40%,
+    60%{
+        left:calc( 100% + 30px );
+    }
+    100%{
+        left:0;
+    }
 }
 
 #loginBtn{
@@ -84,6 +122,7 @@
     font-weight: 600;
     padding-left: 25px;
     padding-right: 25px;
+    margin-top:10px;
 }
 
 #loginBtn:hover{
