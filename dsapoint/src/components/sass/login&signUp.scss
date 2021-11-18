@@ -1,7 +1,7 @@
 @import '../sass/variables.scss';
 
 #container{
-    min-height:80vh;
+    min-height:90vh;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@
 }
 
 #loginContainer{
-    min-height:70vh;
+    min-height:80vh;
     display:flex;
     width:80vw;
     align-items: center;
@@ -19,7 +19,7 @@
 
 #left{
     width:50%;
-    height:55vh;
+    height:75vh;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@
 
 #right{
     width:50%;
-    height:60vh;
+    height:80vh;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -54,7 +54,7 @@ input{
     border:none;
     border-bottom:2px solid $secondary;
     outline:none;
-    margin-bottom:20px;
+    margin-bottom:5px;
     padding:5px;
     color:$primary;
 }
@@ -76,6 +76,7 @@ input:focus{
     color:$primary;
     border-radius:25px;
     font-weight: 600;
+    margin-top:10px;
 }
 
 #loginFormBtn:hover{
@@ -90,7 +91,7 @@ input:focus{
 
 .loginFormLink{
     color:white;
-    margin:10px 15px;
+    margin:10px 20px;
     text-decoration: none;
 }
 

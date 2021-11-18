@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
-import '../components/sass/login.scss'
+import '../components/sass/login&signUp.scss'
 
 const Login = () => {
 
@@ -13,7 +13,6 @@ const Login = () => {
     const inputEvent = (event) =>{
         const name=event.target.name;
         const value=event.target.value;
-        console.log(name+" "+value);
         setLoginData({
             ...loginData,
             [name]: value
