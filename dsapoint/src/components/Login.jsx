@@ -19,6 +19,21 @@ const Login = () => {
         })
     }
 
+    async function loginUser(event){
+        event.preventDefault();
+        const response = await fetch('http://localhost:8000/api/login',{
+            method:'POST',
+            headers:{
+                'Content-Type': 'application/json',
+            },
+            body:JSON.stringify({
+                ...loginData,
+            }),
+        })
+        const data = await response.json();
+        console.log(data);
+    }
+
     return (
         <>
             <div id="container">
@@ -28,7 +43,7 @@ const Login = () => {
                         random shit go brrr
                     </div>
                     <div id="right">
-                        <form action="" id="loginForm" autoComplete='off'>
+                        <form action="" id="loginForm" autoComplete='off' onSubmit={loginUser} >
                             <label htmlFor="emailId"><span className='smallTextLoginForm'>Email</span></label>
                             <input type="email" name="emailId" id="emailId" value={loginData.emailId} onChange={inputEvent} />
                             <label htmlFor="password"><span className='smallTextLoginForm'>Password</span></label>
