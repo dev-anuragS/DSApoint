@@ -81,7 +81,7 @@
     font-weight:600;
     position:relative;
     top:0;
-    animation: slideup 12s steps(4) infinite;
+    animation: slideup 16s steps(4) infinite;
 }
 
 @keyframes slideup {
@@ -98,7 +98,7 @@
     width:100%;
     border-left:2px solid $primary;
     background-color: $background;
-    animation: typewriter 3s steps(10) infinite;
+    animation: typewriter 4s steps(25) infinite;
 }
 
 @keyframes typewriter {

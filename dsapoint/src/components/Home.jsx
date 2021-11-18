@@ -12,10 +12,10 @@ const Home = () => {
                     </div>
                     <div id='homeScreenContent'>
                         <div id="variableContent">
-                        <p id='logoContent'>Anurag</p>
-                        <p id='logoContent'>Ankur</p>
-                        <p id='logoContent'>Ambesh</p>
-                        <p id='logoContent'>Anmol</p>
+                        <p id='logoContent'>Welcome to DSApoint</p>
+                        <p id='logoContent'>An online Learning Platform</p>
+                        <p id='logoContent'>A Coding Platform</p>
+                        <p id='logoContent'>Let's get Started</p>
                         </div>
                         <button id='loginBtn'>Get Started</button>
                     </div>
