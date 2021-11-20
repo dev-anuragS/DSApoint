@@ -2,8 +2,11 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import '../components/sass/login&signUp.scss'
 import { useState } from 'react'
+import { useHistory } from 'react-router';
 
 const SignUp = () => {
+
+    const history = useHistory();
 
     const [signUpData,setsignUpData] = useState({
         fullName:"",
@@ -33,7 +36,11 @@ const SignUp = () => {
             }),
         })
         const data = await response.json();
-        console.log(data);
+        
+        if(data.status === 'ok'){
+            history.push('/login');
+        }
+
     }
 
     return (
