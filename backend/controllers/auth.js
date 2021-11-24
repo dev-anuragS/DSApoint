@@ -42,10 +42,10 @@ exports.profile= async (req,res)=>{
         const decoded = jwt.verify(token, process.env.jwtToken);
         const emailId = decoded.emailId;
         const user = await User.findOne({emailId:emailId});
-        return res.json( {status:'ok',user: user});
+        return res.json( {status : 'ok', user : user});
     }
     catch(error){
         console.log(error);
-        res.json({status: 'error', error: 'invalid token'});
+        return res.json({status: 'error', error: 'invalid token'});
     }
 }
