@@ -8,13 +8,13 @@ const Profile = () => {
     const history = useHistory();
 
     async function populateProfile(){
-        const req = await fetch('http://localhost:8000/api/profile',{
+        const res = await fetch('http://localhost:8000/api/profile',{
             headers:{
                 'x-access-token' : localStorage.getItem('token'),
             },
         })
 
-        const data=req.json();
+        const data=res.json();
         console.log(data);
     }
     

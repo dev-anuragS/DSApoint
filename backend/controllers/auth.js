@@ -27,7 +27,7 @@ exports.login = async (req,res) => {
         const token = jwt.sign({
             fullName : user.fullName,
             emailId : user.emailId,
-        }, 'userSecAuth@6699');
+        }, process.env.jwtToken);
 
         return res.json({status : 'ok', user: token})
     }else{
@@ -39,7 +39,7 @@ exports.profile= async (req,res)=>{
     const token = req.headers['x-access-token'];
 
     try{
-        const decoded = jwt.verify(token,'userSecAuth@6699');
+        const decoded = jwt.verify(token, process.env.jwtToken);
         const emailId = decoded.emailId;
         const user = await User.findOne({emailId:emailId});
         return res.json( {status:'ok',user: user});
