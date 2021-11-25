@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import jwt from'jsonwebtoken';
 import { useHistory } from 'react-router';
+import './sass/profile.scss'
 
 const Profile = () => {
 
@@ -47,8 +48,17 @@ const Profile = () => {
     return(
         <>
             <div id="profilePage">
-                name: {userData.fullName}
-                emailId: {userData.emailId}
+
+                <div id="profileDashboard">
+                    <span>Name : {userData.fullName}</span>
+                    <span>Email-Id : {userData.emailId}</span>
+                </div>
+
+                <div id="profileProgress">
+                    {/* code for progress here */}
+                    <h2>Progress</h2>
+                </div>
+                
             </div>
         </>
     )
