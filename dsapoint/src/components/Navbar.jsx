@@ -17,7 +17,10 @@ const Navbar = () => {
                             <NavLink className="nav-link" exact to="/">Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" exact to="/login">Login / SignUp</NavLink>
+                            <NavLink className="nav-link" exact to="/login">Login</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" exact to="/profile">My Profile</NavLink>
                         </li>
                         <li className="nav-item dropdown">
                             <NavLink className="nav-link dropdown-toggle" exact to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

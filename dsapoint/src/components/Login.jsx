@@ -1,9 +1,13 @@
 import React from 'react'
+import jwt from 'jsonwebtoken'
 import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useHistory } from 'react-router'
 import '../components/sass/login&signUp.scss'
 
 const Login = () => {
+
+    const history = useHistory();
 
     const [loginData,setLoginData] = useState({
         emailId:"",
@@ -18,6 +22,20 @@ const Login = () => {
             [name]: value
         })
     }
+
+    useEffect(()=>{
+        const token = localStorage.getItem('token');
+        if(token){
+            const user = jwt.decode(token);
+            if(!user){
+                localStorage.removeItem(token);
+            }
+            else{
+                alert('Already Logged in logout to login with a diffrent account!')
+                history.replace('/profile');
+            }
+        }
+    })
 
     async function loginUser(event){
         event.preventDefault();

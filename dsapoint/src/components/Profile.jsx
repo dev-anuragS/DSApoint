@@ -40,7 +40,7 @@ const Profile = () => {
             }
         }
         else{
-            alert('Session Timeout, Please login again');
+            alert('Please login to access profile');
             history.replace('/login');
         }
     },[])
