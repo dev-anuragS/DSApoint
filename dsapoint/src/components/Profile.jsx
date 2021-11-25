@@ -44,6 +44,12 @@ const Profile = () => {
             history.replace('/login');
         }
     },[])
+
+    function signOut(){
+        localStorage.removeItem('token');
+        alert('Logout Succesfull');
+        history.replace('/');
+    }
     
     return(
         <>
@@ -52,6 +58,7 @@ const Profile = () => {
                 <div id="profileDashboard">
                     <span>Name : {userData.fullName}</span>
                     <span>Email-Id : {userData.emailId}</span>
+                    <button id="profileSignOut" onClick={signOut}>Sign Out</button>
                 </div>
 
                 <div id="profileProgress">
