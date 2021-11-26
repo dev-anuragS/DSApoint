@@ -2,7 +2,6 @@ const User = require("../models/user.model");
 const jwt =require('jsonwebtoken')
 
 exports.register= async (req,res)=>{
-    console.log(req.body);
     try{
         const user = await User.create({
             fullName: req.body.fullName,
