@@ -3,24 +3,44 @@
 #profilePage{
     min-height:80vh;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: $secondary;
 }
 
 #profileDashboard{
-    min-height:60vh;
-    width:30%;
+    // min-height:10vh;
+    width:80%;
     display: flex;
-    flex-direction: column;
-    padding:5px;
-    align-items: center;
-    justify-content: center;
-    color:$primary;
-    background-color: $background;
+    flex-direction: row;
+    padding:10px;
+    align-items:center;
+    justify-content: space-between;
+    color:black;
+    background-color: white;
+    font-weight:600;
+    font-size: 1.3rem;
+    box-shadow: 0 0 16px 16px rgba(15, 15, 15,.4);
 }
 
 #profileProgress{
-    width:60%;
+    width:80%;
     min-height: 60vh;
+    background-color: $background;
+    color:$primary;
+}
+
+#profileSignOut{
+    padding:8px 15px;
+    border:2px solid black;
+    border-radius: 50px;
+    background-color: $background;
+    color:white;
+    font-size: 1.1rem;
+    margin:10px;
+}
+
+#profileSignOut:hover{
+    color:$primary;
 }
