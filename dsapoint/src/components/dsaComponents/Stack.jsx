@@ -1,7 +1,7 @@
 // Name of COmponents start with Capital
 
 import React from 'react'
-import '../components/sass/stack.scss'
+import '../sass/dsaSass/stack.scss'
 
 const Stack = () => {
     return (
