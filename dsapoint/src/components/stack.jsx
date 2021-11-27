@@ -41,31 +41,19 @@ const Stack = () => {
                         <p><strong>Stack</strong></p>
                     </div>
 
-                    <div class="maincontainer">
-                        <div class="thecard">
-                            <div class="thefront">
-                                <div id="dp">
-                                    <h1>dp</h1>
-                                </div>
-                                <div id="content">
-                                    <ul>
-                                        <li>Understanding Stack is difficult!</li>
-                                        <li>Not anymore, Come Here</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="theback">
-                                <div id="visualizebtn">Visualize</div>
-                                <div id="visualContent">
-                                    <h3>Stack Operations</h3>
-                                    <ul>
-                                        <li>Pop</li>
-                                        <li>push</li>
-                                        <li>peek</li>
-                                        <li>top</li>
-                                    </ul>
-                                </div>
-                            </div>
+                    <div class="visualizeCard">
+                        <div class="cardLogo">
+                            <h1>dp</h1>
+                        </div>
+                        <div class="content">
+                            <h2>Stack Operations</h2>
+                            <ul>
+                                <li>Push</li>
+                                <li>Pop</li>
+                                <li>Peek</li>
+                                <li>Top</li>
+                            </ul>
+                            <button class="cardBtn">Visulaize</button>
                         </div>
                     </div>
                 </div>
